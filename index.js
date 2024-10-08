@@ -19,8 +19,8 @@ app.listen(process.env.PORT);
 function createBot () {
 const bot = mineflayer.createBot({
   host: 'mikailserver.aternos.me', 
-  version: false, // }U can replace with 1.16.5 for example, remember to use ', = '1.16.5'
-  username: 'ExplosiveKiller',
+  version: false,
+  username: 'AFK_BOT',
   port: 30505, 
   plugins: [AutoAuth],
   AutoAuth: 'bot112022'
