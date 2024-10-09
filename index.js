@@ -35,7 +35,7 @@ function create_bot() {
         const app = express();
         app.use(express.json());
         app.get("/", (_, res) => res.send(`Bot is running on server!\nServer informations:\n  IP: ${server_ip}\n  Port: ${server_port}`));
-        app.listen(server_port);
+        app.listen(process.env.PORT);
     });
 
     bot.on('end', (reason) => {
